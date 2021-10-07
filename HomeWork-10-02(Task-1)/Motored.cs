@@ -42,7 +42,7 @@ namespace HomeWork_10_02_Task_1_
 
         public virtual string GetDetailedInfo()
         {
-            return $"{Model} {Make} {ProductionYear} {FuelTankSize} {FuelUsedPerKm} {Color}";
+            return $"{GetInfo()} {ProductionYear} {FuelTankSize} {FuelUsedPerKm} {Color}";
         }
     }
 }

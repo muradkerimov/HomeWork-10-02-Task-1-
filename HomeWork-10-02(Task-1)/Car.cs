@@ -12,7 +12,6 @@ namespace HomeWork_10_02_Task_1_
 
         public Car(string model, string make, int productionYear):base( model,  make,  productionYear)
         {
-
         }
 
         public Car(string model, string make, int productionYear,int fuelTankSize, double fuelAmount, double fuelUsedPerKm,string color, int horsePower, double motorSize, string transmission, int passangerCount, bool isOn) : base(model, make, productionYear,  fuelTankSize , fuelAmount,  fuelUsedPerKm,  color)
@@ -58,8 +57,8 @@ namespace HomeWork_10_02_Task_1_
 
         public override string GetDetailedInfo()
         {
-            base.GetDetailedInfo();
-            return $"{FuelAmount}";
+            ;
+            return $"{base.GetDetailedInfo()} {FuelAmount}";
         }
     }
 }
